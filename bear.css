@@ -2,17 +2,25 @@
 body {
   background-image: url("images/bearbunsbakery2.jpg");
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 .mainDiv {
-  margin-left: 15%;
-  margin-right: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+
+.mainArea {
+  background-color: white;
+  padding: 10px;
+  box-sizing: content-box;
 }
 
 .header {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
+
 .mySlides {display:none}
 
 /* Slideshow container */
@@ -20,28 +28,8 @@ body {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  top: 50%;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -59,12 +47,7 @@ body {
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -77,8 +60,8 @@ body {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  box-sizing: border-box;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -91,9 +74,21 @@ body {
 }
 
 .navPics {
+  box-sizing: border-box;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-
+.logo {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 @-webkit-keyframes fade {
   from {opacity: .4}
