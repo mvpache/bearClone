@@ -11,6 +11,8 @@
     <h2>Check Out Our Buns</h2>
     <h3>Adress here<h3>
   </div>
+  <div class="mainArea">
+  <div>
     <img src="images/bearbunsbakery13.jpg">
   </div>
   <div class="note">
@@ -30,10 +32,29 @@
     <input type="text" name="message" size="50"><br>
     <input type="submit" value="Send">
   </form>
-  <div>
+</div>
+  <div id="map">
+    <script>
+      function initMap() {
+        var uluru = {lat: 32.8019536, lng: -117.140189219};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJjYzXv6jDjlyXr_gyGIqz4GDfhxPprzk&callback=initMap">
+    </script>
+  </div>
+</div>
   <div class="logo">
     <img src="images/bbb-logo.png" style="width:25%">
   </div>
-  </div>
+</div>
 </body>
 </html>

@@ -7,7 +7,6 @@ body {
 .mainDiv {
   padding-left: 15%;
   padding-right: 15%;
-
 }
 
 .mainArea {
@@ -98,4 +97,9 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+#map {
+  width: 100%;
+  height: 400px;
 }
