@@ -11,13 +11,14 @@ body {
 
 .mainArea {
   background-color: white;
-  padding: 10px;
   box-sizing: content-box;
+  padding: 10px;
 }
 
 .header {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  padding-bottom: 10px;
 }
 
 .mySlides {display:none}
@@ -87,6 +88,19 @@ body {
   justify-content: center;
   padding-top: 10px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+  padding: 5px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
 }
 
 @-webkit-keyframes fade {
