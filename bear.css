@@ -96,11 +96,31 @@ body {
   align-items: center;
 }
 
+.tableTitle {
+  text-align: center;
+}
+
+
 a {
   color: white;
   padding: 5px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-decoration: none;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+
+table {
+  padding: 10px;
+  table-layout:fixed;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 
